@@ -1,4 +1,4 @@
-/* css/home.css - Homepage Specific Styles */
+/* css/home.css - Homepage Specific Styles (Enhanced for Clean, Modern, Elegant UI/UX) */
 
 /* Hero Section */
 .hero-section {
@@ -9,48 +9,50 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 8rem 2rem;
-    min-height: 80vh; /* Ensures it takes up most of the viewport */
+    padding: 10rem 2rem; /* Increased padding for more grandeur */
+    min-height: 85vh; /* Slightly taller hero section */
     position: relative;
     overflow: hidden;
     border-bottom-left-radius: var(--border-radius-large);
     border-bottom-right-radius: var(--border-radius-large);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25); /* Deeper shadow for more impact */
 }
 
 .hero-content {
-    z-index: 2; /* Ensure content is above background animation */
-    max-width: 900px;
+    z-index: 2;
+    max-width: 1000px; /* Wider content area */
     margin: 0 auto;
 }
 
 .hero-title {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-size: 5.5rem; /* Even larger, more majestic title */
+    font-weight: 800;
+    margin-bottom: 1.2rem;
     color: var(--text-color-light);
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger text shadow */
+    letter-spacing: -0.04em; /* Tighter letter spacing for modern feel */
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 2.5rem;
-    color: rgba(255, 255, 255, 0.9);
-    max-width: 700px;
-    line-height: 1.5;
+    font-size: 1.7rem; /* Larger subtitle */
+    margin-bottom: 3rem;
+    color: rgba(255, 255, 255, 0.95); /* Slightly less transparent */
+    max-width: 800px;
+    line-height: 1.6;
+    font-weight: 300; /* Lighter weight for subtitle for contrast */
 }
 
 .hero-cta-buttons {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem; /* More space between buttons */
     justify-content: center;
 }
 
 .hero-cta-buttons .btn {
-    padding: 1.2rem 2.5rem;
-    font-size: 1.1rem;
+    padding: 1.4rem 3rem; /* Larger buttons */
+    font-size: 1.25rem; /* Larger font */
     border-radius: var(--border-radius-large);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Softer shadow */
 }
 
 .hero-cta-buttons .btn-primary {
@@ -61,18 +63,20 @@
 
 .hero-cta-buttons .btn-primary:hover {
     background-color: #FFD700; /* Slightly brighter gold */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); /* Even more pronounced lift for hero buttons */
 }
 
 .hero-cta-buttons .btn-secondary {
     color: var(--text-color-light);
-    border-color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.5); /* Slightly more opaque border */
 }
 
 .hero-cta-buttons .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15); /* More visible hover background */
     color: var(--text-color-light);
     border-color: var(--text-color-light);
+    transform: translateY(-5px); /* Even more pronounced lift for hero buttons */
 }
 
 /* Hero Background Animation (Subtle, Elegant) */
@@ -82,10 +86,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.15) 0%, transparent 50%), /* Stronger white radial */
+                radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.15) 0%, transparent 50%);
     background-size: 200% 200%;
-    animation: moveBackground 20s infinite alternate ease-in-out;
+    animation: moveBackground 25s infinite alternate ease-in-out; /* Slower animation for more elegance */
     z-index: 1;
 }
 
@@ -98,88 +102,99 @@
 /* Featured Projects Section */
 .featured-projects-section {
     background-color: var(--background-light);
-    padding: 6rem 2rem;
+    padding: 8rem 2rem; /* Increased padding */
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly larger min-width for cards */
+    gap: 3rem; /* More space between cards */
+    max-width: 1300px; /* Wider grid */
     margin: 0 auto;
 }
 
 .project-card {
     background-color: var(--background-light);
     border-radius: var(--border-radius-large);
-    box-shadow: 0 8px 20px var(--shadow-medium);
+    box-shadow: 0 12px 30px var(--shadow-medium); /* Deeper initial shadow */
     overflow: hidden;
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
     display: flex;
     flex-direction: column;
+    border: 1px solid var(--border-color); /* Subtle border */
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(-10px); /* More pronounced lift */
+    box-shadow: 0 20px 45px var(--shadow-strong); /* Stronger shadow on hover */
 }
 
 .project-thumbnail {
     width: 100%;
-    height: 250px; /* Fixed height for consistency */
+    height: 280px; /* Taller thumbnails for better visual impact */
     object-fit: cover;
     border-bottom: 1px solid var(--border-color);
 }
 
 .project-info {
-    padding: 1.8rem;
+    padding: 2.2rem; /* More padding inside card */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
 .project-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.8rem; /* Larger title */
+    margin-bottom: 1rem;
     color: var(--primary-color);
 }
 
 .project-description {
-    font-size: 0.95rem;
+    font-size: 1rem; /* Slightly larger description */
     color: var(--text-color-dark);
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     flex-grow: 1;
+    line-height: 1.7;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    gap: 0.8rem; /* More space between tags */
+    margin-top: 1.2rem;
+    margin-bottom: 1.8rem;
 }
 
 .project-tags span {
     background-color: var(--primary-color)1A; /* Light primary color background */
     color: var(--primary-color);
-    padding: 0.4rem 0.9rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
+    padding: 0.5rem 1.1rem; /* Larger tags */
+    border-radius: 25px; /* More rounded */
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background-color var(--transition-speed), color var(--transition-speed), transform var(--transition-speed); /* Added transform */
+}
+
+.project-tags span:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    transform: translateY(-3px); /* Subtle lift for tags */
 }
 
 .btn-view-project {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.8rem; /* More space for icon */
     color: var(--secondary-color);
-    font-weight: 600;
-    font-size: 0.95rem;
-    margin-top: auto; /* Pushes button to the bottom */
+    font-weight: 700; /* Bolder text */
+    font-size: 1rem; /* Slightly larger font */
+    margin-top: auto;
+    transition: color var(--transition-speed), text-decoration var(--transition-speed); /* Added text-decoration */
 }
 
 .btn-view-project:hover {
     color: var(--primary-color);
+    text-decoration: underline; /* Underline on hover for strong link feedback */
 }
 
 .btn-view-project i {
@@ -187,28 +202,28 @@
 }
 
 .btn-view-project:hover i {
-    transform: translateX(5px);
+    transform: translateX(8px); /* More pronounced slide */
 }
 
 .view-all-projects-cta {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 5rem; /* More space */
 }
 
 /* About Me Snippet Section */
 .about-me-snippet-section {
     background-color: var(--background-dark);
     color: var(--text-color-light);
-    padding: 6rem 2rem;
+    padding: 8rem 2rem; /* Increased padding */
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    flex-wrap: wrap-reverse; /* Image on right for desktop, top for mobile */
+    gap: 5rem; /* More space between content and image */
+    flex-wrap: wrap-reverse;
 }
 
 .about-me-content {
-    max-width: 600px;
+    max-width: 650px; /* Wider content area */
     text-align: left;
 }
 
@@ -219,13 +234,14 @@
 }
 
 .about-me-content .section-title {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Larger title */
 }
 
 .about-me-content .section-subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 2.5rem;
-    opacity: 0.9;
+    font-size: 1.2rem; /* Larger subtitle */
+    margin-bottom: 3rem;
+    opacity: 0.95;
+    line-height: 1.7;
 }
 
 .about-me-image {
@@ -233,12 +249,17 @@
 }
 
 .about-me-image img {
-    width: 300px;
-    height: 300px;
+    width: 350px; /* Larger image */
+    height: 350px;
     border-radius: 50%;
     object-fit: cover;
-    border: 6px solid var(--accent-color);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 8px solid var(--accent-color); /* Thicker border */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+    transition: transform var(--transition-speed);
+}
+
+.about-me-image img:hover {
+    transform: scale(1.03); /* Subtle zoom on hover */
 }
 
 /* Call to Action Section */
@@ -246,33 +267,31 @@
     background: linear-gradient(45deg, var(--secondary-color) 0%, var(--primary-color) 100%);
     color: var(--text-color-light);
     text-align: center;
-    padding: 6rem 2rem;
+    padding: 8rem 2rem; /* Increased padding */
     border-top-left-radius: var(--border-radius-large);
     border-top-right-radius: var(--border-radius-large);
-    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.25); /* Deeper shadow */
 }
 
 .cta-section .section-title {
     color: var(--text-color-light);
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 3.8rem; /* Larger title */
+    margin-bottom: 1.2rem;
 }
 
 .cta-section .section-subtitle {
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 3rem;
-    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 4rem; /* More space */
+    font-size: 1.3rem; /* Larger subtitle */
 }
 
 /* --- Animation Classes for Scroll Reveal --- */
-/* Initial state: hidden and slightly moved down */
 .animate-on-scroll {
     opacity: 0;
-    transform: translateY(30px); /* Increased translateY for more noticeable effect */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Slower transition for elegance */
+    transform: translateY(40px); /* Increased translateY for more pronounced effect */
+    transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother, more elegant cubic-bezier transition */
 }
 
-/* Active state: visible and in original position */
 .animate-on-scroll.active {
     opacity: 1;
     transform: translateY(0);
@@ -281,24 +300,67 @@
 
 /* Responsive Design for Homepage Styles */
 @media (max-width: 1024px) {
+    .hero-section {
+        padding: 8rem 2rem;
+        min-height: 75vh;
+    }
     .hero-title {
-        font-size: 3.8rem;
+        font-size: 4.5rem;
     }
     .hero-subtitle {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+    .hero-cta-buttons {
+        gap: 1.5rem;
+    }
+    .hero-cta-buttons .btn {
+        padding: 1.2rem 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    .featured-projects-section {
+        padding: 6rem 2rem;
     }
     .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
     }
+    .project-thumbnail {
+        height: 250px;
+    }
+    .project-title {
+        font-size: 1.6rem;
+    }
+
     .about-me-snippet-section {
+        flex-direction: column; /* Stack on smaller desktops/tablets */
+        text-align: center;
         gap: 3rem;
+        padding: 6rem 2rem;
+    }
+    .about-me-content {
+        text-align: center;
     }
     .about-me-content .section-title {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
+    }
+    .about-me-content .section-subtitle {
+        font-size: 1.1rem;
+    }
+    .about-me-image img {
+        width: 300px;
+        height: 300px;
+        border-width: 6px;
+    }
+
+    .cta-section {
+        padding: 6rem 2rem;
     }
     .cta-section .section-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+    .cta-section .section-subtitle {
+        font-size: 1.2rem;
     }
 }
 
@@ -308,10 +370,10 @@
         min-height: 70vh;
     }
     .hero-title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .hero-cta-buttons {
         flex-direction: column;
@@ -320,59 +382,62 @@
     .hero-cta-buttons .btn {
         width: 100%;
         max-width: 300px;
+        padding: 1.1rem 2.2rem;
+        font-size: 1.1rem;
     }
 
     .featured-projects-section {
-        padding: 4rem 1.5rem;
+        padding: 5rem 1.5rem;
     }
     .projects-grid {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 2rem;
     }
     .project-thumbnail {
-        height: 200px;
+        height: 220px;
+    }
+    .project-title {
+        font-size: 1.5rem;
+    }
+    .project-info {
+        padding: 1.8rem;
     }
 
     .about-me-snippet-section {
-        flex-direction: column;
-        text-align: center;
-        gap: 2rem;
-        padding: 4rem 1.5rem;
-    }
-    .about-me-content {
-        text-align: center;
+        padding: 5rem 1.5rem;
     }
     .about-me-content .section-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .about-me-content .section-subtitle {
         font-size: 1rem;
     }
     .about-me-image img {
-        width: 200px;
-        height: 200px;
-        border-width: 4px;
+        width: 250px;
+        height: 250px;
+        border-width: 5px;
     }
 
     .cta-section {
-        padding: 4rem 1.5rem;
+        padding: 5rem 1.5rem;
     }
     .cta-section .section-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .cta-section .section-subtitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 480px) {
     .hero-section {
-        padding: 5rem 1rem;
+        padding: 4rem 1rem;
     }
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     .hero-subtitle {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
     .hero-cta-buttons .btn {
         padding: 1rem 2rem;
@@ -380,10 +445,13 @@
     }
 
     .featured-projects-section {
-        padding: 3rem 1rem;
+        padding: 4rem 1rem;
     }
     .project-card {
         padding: 1rem;
+    }
+    .project-thumbnail {
+        height: 180px;
     }
     .project-title {
         font-size: 1.3rem;
@@ -392,27 +460,32 @@
         font-size: 0.9rem;
     }
     .project-tags span {
-        padding: 0.3rem 0.7rem;
-        font-size: 0.75rem;
+        padding: 0.4rem 0.9rem;
+        font-size: 0.8rem;
     }
 
     .about-me-snippet-section {
-        padding: 3rem 1rem;
+        padding: 4rem 1rem;
     }
     .about-me-content .section-title {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
     .about-me-content .section-subtitle {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+    }
+    .about-me-image img {
+        width: 200px;
+        height: 200px;
+        border-width: 4px;
     }
 
     .cta-section {
-        padding: 3rem 1rem;
+        padding: 4rem 1rem;
     }
     .cta-section .section-title {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
     .cta-section .section-subtitle {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
