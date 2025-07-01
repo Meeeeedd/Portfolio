@@ -46,4 +46,36 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentYearSpan) {
         currentYearSpan.textContent = new Date().getFullYear();
     }
+
+    // --- Global Scroll Animation Logic (Moved from home.js) ---
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+    const observerOptions = {
+        root: null, // Use the viewport as the root
+        rootMargin: '0px',
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Stop observing once animated
+            }
+        });
+    }, observerOptions);
+
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
+
+    // Handle elements that are already in view on page load
+    animatedElements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            element.classList.add('active');
+            observer.unobserve(element);
+        }
+    });
+    // --- End Global Scroll Animation Logic ---
 });
