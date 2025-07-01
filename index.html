@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Ben Naima - Full-Stack Developer | Elegant & Majestic</title>
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Page Specific Styles -->
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Mohamed Ben Naima</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section: Majestic Introduction -->
+        <!-- The hero section often doesn't need scroll animation as it's visible on load -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Crafting Digital Grandeur</h1>
+                <p class="hero-subtitle">
+                    Full-Stack Developer transforming complex challenges into elegant, high-performance solutions.
+                </p>
+                <div class="hero-cta-buttons">
+                    <a href="projects.html" class="btn btn-primary">Explore My Work</a>
+                    <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <!-- Dynamic background element for visual appeal -->
+            <div class="hero-background-animation"></div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <!-- Added 'animate-on-scroll' class to elements that should animate -->
+        <section class="featured-projects-section">
+            <h2 class="section-title animate-on-scroll">My Majestic Creations</h2>
+            <p class="section-subtitle animate-on-scroll">A glimpse into my impactful full-stack development and innovative solutions.</p>
+
+            <div class="projects-grid">
+                <!-- Project 1: Hermes -->
+                <div class="project-card animate-on-scroll">
+                    <img src="assets/images/hermes-thumbnail.jpg" alt="Hermes E-commerce Platform" class="project-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x250/333333/FFFFFF?text=Hermes';">
+                    <div class="project-info">
+                        <h3 class="project-title">Hermes - E-commerce Platform</h3>
+                        <p class="project-description">
+                            A robust MERN stack e-commerce solution, containerized with Docker and deployed on Render.
+                        </p>
+                        <div class="project-tags">
+                            <span>MERN Stack</span><span>Docker</span><span>CI/CD</span><span>E-commerce</span>
+                        </div>
+                        <a href="project-details/hermes.html" class="btn btn-view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2: MIRAVIASPACE -->
+                <div class="project-card animate-on-scroll">
+                    <img src="assets/images/miraviaspace-thumbnail.jpg" alt="MIRAVIASPACE Travel & Social Platform" class="project-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x250/333333/FFFFFF?text=MIRAVIASPACE';">
+                    <div class="project-info">
+                        <h3 class="project-title">MIRAVIASPACE - Travel & Social Platform</h3>
+                        <p class="project-description">
+                            A versatile platform with Symfony web and JavaFX desktop clients, integrating travel services and social features.
+                        </p>
+                        <div class="project-tags">
+                            <span>Symfony</span><span>JavaFX</span><span>AI Chatbot</span><span>Multi-platform</span>
+                        </div>
+                        <a href="project-details/miraviaspace.html" class="btn btn-view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3: SAFENEST -->
+                <div class="project-card animate-on-scroll">
+                    <img src="assets/images/safenest-thumbnail.jpg" alt="SAFENEST Mobile App" class="project-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x250/333333/FFFFFF?text=SAFENEST';">
+                    <div class="project-info">
+                        <h3 class="project-title">SAFENEST - Smart Home Mobile App</h3>
+                        <p class="project-description">
+                            A React Native mobile app connected to smart sensors for data collection and light control.
+                        </p>
+                        <div class="project-tags">
+                            <span>React Native</span><span>IoT</span><span>Mobile Development</span><span>Sensors</span>
+                        </div>
+                        <a href="project-details/safenest.html" class="btn btn-view-project">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-projects-cta animate-on-scroll">
+                <a href="projects.html" class="btn btn-primary">View All Projects <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+
+        <!-- About Me Snippet Section -->
+        <section class="about-me-snippet-section">
+            <div class="about-me-content animate-on-scroll">
+                <h2 class="section-title">About My Journey</h2>
+                <p class="section-subtitle">
+                    As a dedicated full-stack developer, I thrive on transforming complex challenges into elegant, high-performance digital solutions. My passion lies in crafting innovative web and mobile applications that not only function flawlessly but also deliver exceptional user experiences.
+                </p>
+                <a href="about.html" class="btn btn-secondary">Get to Know Me Better <i class="fas fa-user-circle"></i></a>
+            </div>
+            <div class="about-me-image animate-on-scroll">
+                <img src="assets/images/profile.jpg" alt="Mohamed Ben Naima Profile" onerror="this.onerror=null;this.src='https://placehold.co/300x300/333333/FFFFFF?text=Your+Photo';">
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <h2 class="section-title animate-on-scroll">Ready to Elevate Your Next Project?</h2>
+            <p class="section-subtitle animate-on-scroll">
+                Let's collaborate to build something extraordinary.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-large animate-on-scroll">Start a Conversation <i class="fas fa-comments"></i></a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Mohamed Ben Naima</h3>
+                <p>Full-Stack Developer</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Me</h4>
+                <a href="https://www.linkedin.com/in/mohamed-ben-naima" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Meeeeedd" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <!-- Add more social links as needed -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Mohamed Ben Naima. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Global Scripts -->
+    <script src="js/main.js"></script>
+    <!-- Page Specific Scripts -->
+    <script src="js/home.js"></script>
+</body>
+</html>
