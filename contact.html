@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mohamed Ben Naima - Contact Me</title>
+
+    <!-- Global Styles -->
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Page Specific Styles -->
+
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <!-- Font Awesome for icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Mohamed Ben Naima</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="projects.html">Projects</a></li>
+
+          <li><a href="about.html">About Me</a></li>
+
+          <li><a href="services.html">Services</a></li>
+
+          <li><a href="contact.html" class="active">Contact</a></li>
+
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contact Hero Section -->
+
+      <section class="contact-hero-section">
+        <div class="contact-hero-content animate-on-scroll slide-in-up">
+          <h1 class="contact-hero-title animate-on-scroll slide-in-up">
+            Let's Build Something Extraordinary.
+          </h1>
+
+          <p
+            class="contact-hero-subtitle animate-on-scroll slide-in-up"
+            style="transition-delay: 0.1s"
+          >
+            Ready to discuss your project or just want to say hello? Reach out
+            and let's connect.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+
+      <section class="contact-form-section">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll slide-in-up">
+            Get In Touch
+          </h2>
+
+          <p
+            class="section-subtitle animate-on-scroll slide-in-up"
+            style="transition-delay: 0.1s"
+          >
+            I'm always eager to collaborate on innovative projects and explore
+            new opportunities.
+          </p>
+
+          <div class="contact-content-wrapper">
+            <div class="contact-info-card animate-on-scroll scale-in">
+              <h3>Direct Contact</h3>
+
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>
+                  Personal:
+                  <a href="mailto:medbennaima2021@gmail.com"
+                    >medbennaima2021@gmail.com</a
+                  >
+                </p>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>
+                  Student:
+                  <a href="mailto:Mohamed.BenNaima@esprim.tn"
+                    >Mohamed.BenNaima@esprim.tn</a
+                  >
+                </p>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <p><a href="tel:+21625577542">+216 25 577 542</a></p>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <p>Mahdia, Tunisia</p>
+              </div>
+
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/mohamed-ben-naima"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+
+                <a
+                  href="https://github.com/Meeeeedd"
+                  target="_blank"
+                  aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+
+                <!-- Add more social links as needed -->
+              </div>
+            </div>
+
+            <!--
+   Formspree Integration:
+   1. Go to https://formspree.io/ and sign up.
+   2. Create a new form to get your unique endpoint URL (e.g., https://formspree.io/f/yourformid).
+   3. REPLACE the 'action' URL below with your unique Formspree endpoint.
+   4. Verify your email address with Formspree.
+   NOTE: The '_next' hidden input has been removed. After submission, Formspree will show its default success page.
+   If you deploy your portfolio later and want a custom 'thank-you.html' page, you can re-add:
+   <input type="hidden" name="_next" value="https://yourdeployedportfolio.com/thank-you.html" />
+    -->
+
+            <form
+              action="https://formspree.io/f/xyzjorkp"
+              class="contact-form animate-on-scroll slide-in-right"
+              target="_top"
+              method="POST"
+            >
+              <!-- Removed _subject and _replyto hidden inputs as per your request -->
+              <input type="hidden" name="_captcha" value="true" />
+
+              <div
+                class="form-group animate-on-scroll slide-in-up"
+                style="transition-delay: 0.2s"
+              >
+                <label for="name">Your Name</label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div
+                class="form-group animate-on-scroll slide-in-up"
+                style="transition-delay: 0.3s"
+              >
+                <label for="email">Your Email</label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="_replyto"
+                  placeholder="Enter your email"
+                  required
+                />
+
+                <p class="fs-description">
+                  This will help me respond to your query via an email.
+                </p>
+              </div>
+
+              <div
+                class="form-group animate-on-scroll slide-in-up"
+                style="transition-delay: 0.4s"
+              >
+                <label for="subject">Subject</label>
+
+                <input
+                  type="text"
+                  id="subject"
+                  name="_subject"
+                  placeholder="Subject of your message"
+                  required
+                />
+              </div>
+
+              <div
+                class="form-group animate-on-scroll slide-in-up"
+                style="transition-delay: 0.5s"
+              >
+                <label for="message">Your Message</label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+
+                <p class="fs-description">What would you like to discuss?</p>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-large animate-on-scroll slide-in-up"
+                style="transition-delay: 0.6s"
+              >
+                Send Message
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section (Re-used from main.css) -->
+
+      <section class="cta-section">
+        <h2 class="section-title animate-on-scroll slide-in-up">
+          Ready to Elevate Your Next Project?
+        </h2>
+
+        <p
+          class="section-subtitle animate-on-scroll slide-in-up"
+          style="transition-delay: 0.1s"
+        >
+          Let's collaborate to build something extraordinary.
+        </p>
+
+        <a
+          href="contact.html"
+          class="btn btn-primary btn-large animate-on-scroll slide-in-up"
+          style="transition-delay: 0.2s"
+          >Start a Conversation <i class="fas fa-comments"></i
+        ></a>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Mohamed Ben Naima</h3>
+          <p>Full-Stack Developer</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect With Me</h4>
+          <a
+            href="https://www.linkedin.com/in/mohamed-ben-naima"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/Meeeeedd"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <!-- Add more social links as needed -->
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year"></span> Mohamed Ben Naima. All rights
+          reserved.
+        </p>
+        <p>
+          <a href="privacy-policy.html">Privacy Policy</a> |
+          <a href="terms.html">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Global Scripts -->
+    <script src="js/main.js"></script>
+    <!-- Page Specific Scripts -->
+    <script src="js/contact.js"></script>
+  </body>
+</html>

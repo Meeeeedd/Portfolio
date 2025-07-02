@@ -1,0 +1,397 @@
+/* css/contact.css - Contact Page Specific Styles (Adapted Formspree Styling) */
+
+/* Contact Hero Section */
+.contact-hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 2rem;
+    min-height: 50vh; /* Slightly shorter hero for contact */
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: var(--border-radius-large);
+    border-bottom-right-radius: var(--border-radius-large);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.3);
+}
+
+.contact-hero-content {
+    z-index: 2;
+    max-width: 900px;
+}
+
+.contact-hero-title {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-color-light);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.04em;
+}
+
+.contact-hero-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 8rem 0;
+    background-color: var(--background-light);
+}
+
+.contact-form-section .section-title,
+.contact-form-section .section-subtitle {
+    text-align: center;
+}
+
+.contact-content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 3rem; /* Space between info card and form */
+    max-width: 1200px;
+    margin: 4rem auto 0 auto;
+    justify-content: center; /* Center content when wrapped */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.contact-info-card {
+    flex: 1; /* Allows it to grow */
+    min-width: 300px; /* Minimum width for the card */
+    background-color: var(--background-dark); /* Dark background for contrast */
+    color: var(--text-color-light);
+    border-radius: var(--border-radius-large);
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to left inside card */
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.contact-info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info-card h3 {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    width: 100%; /* Ensure title takes full width */
+    text-align: center; /* Center the title within the card */
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem; /* Space between icon and text */
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    width: 100%; /* Ensure item takes full width */
+}
+
+.info-item i {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    flex-shrink: 0; /* Prevent icon from shrinking */
+    transition: transform var(--transition-speed);
+}
+
+.info-item:hover i {
+    transform: scale(1.1); /* Subtle icon scale on hover */
+}
+
+.info-item a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+    transition: color var(--transition-speed);
+}
+
+.info-item a:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.contact-info-card .social-links {
+    display: flex;
+    justify-content: center; /* Center social icons */
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 100%; /* Ensure social links take full width */
+}
+
+.contact-info-card .social-links a {
+    font-size: 2.5rem;
+    color: var(--text-color-light);
+    transition: color var(--transition-speed), transform var(--transition-speed);
+}
+
+.contact-info-card .social-links a:hover {
+    color: var(--primary-color); /* Changed to primary color on hover for consistency */
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* --- Form Design Adaptation (to match your HTML and existing design) --- */
+
+/* Main form container */
+.contact-form { /* This is the class on your <form> tag */
+    display: grid; /* Use grid for layout */
+    row-gap: 1.8rem; /* Consistent spacing between form groups */
+    flex: 2;
+    min-width: 350px;
+    background-color: var(--background-light);
+    border-radius: var(--border-radius-large);
+    padding: 3rem;
+    box-shadow: 0 10px 25px var(--shadow-medium);
+    border: 1px solid var(--border-color);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.contact-form:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px var(--shadow-strong);
+}
+
+/* Individual form field container */
+.form-group { /* This is the class on your <div> around label/input */
+    display: flex; /* Use flex for label and input/textarea */
+    flex-direction: column;
+    row-gap: 0.6rem; /* Space between label and input */
+    position: relative;
+}
+
+/* Label styling */
+.form-group label { /* Direct targeting of label within .form-group */
+    color: var(--text-color-dark);
+    display: block;
+    font-family: var(--font-family-primary); /* Use your primary font */
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 600; /* Match your existing label weight */
+}
+
+/* Input and textarea styling */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    appearance: none; /* Remove default browser styling */
+    border-radius: var(--border-radius-medium); /* Use your medium border radius */
+    border: 1px solid var(--border-color); /* Use your border color */
+    box-shadow: none; /* Remove default Formspree inset shadow */
+    color: var(--text-color-dark);
+    font-family: var(--font-family-primary); /* Use your primary font */
+    font-size: 1rem;
+    line-height: 1.5rem;
+    outline: none; /* Remove default outline */
+    padding: 1rem 1.2rem; /* Consistent padding */
+    background-color: #fcfcfc; /* Slightly off-white background */
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+    height: auto; /* Allow height to adjust for text/email inputs */
+}
+
+/* Focus states for inputs and textarea */
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color); /* Highlight border on focus */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); /* Subtle focus ring */
+}
+
+/* Placeholder text color */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-color-dark); /* Use your text color */
+    opacity: 0.7; /* Make it muted */
+}
+
+/* Textarea specific styles */
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    padding: 0.8rem 1.2rem; /* Adjust padding for textarea */
+}
+
+/* Description text below fields */
+p.fs-description { /* Targeting the <p> with this class */
+    color: var(--text-color-dark); /* Use your text color */
+    opacity: 0.7; /* Muted */
+    font-size: 0.9rem; /* Smaller font size */
+    line-height: 1.25rem;
+    margin-top: 0.25rem; /* Small margin from input */
+}
+
+/* Button styling - using your existing .btn classes */
+/* Your HTML uses class="btn btn-primary btn-large animate-on-scroll slide-in-up" */
+/* These styles are already defined in main.css and will apply automatically. */
+/* No need to redefine .fs-button or .fs-button-group here. */
+
+
+/* Responsive Design for Contact Page */
+@media (max-width: 1024px) {
+    .contact-hero-section {
+        padding: 8rem 2rem;
+        min-height: 40vh;
+    }
+    .contact-hero-title {
+        font-size: 4rem;
+    }
+    .contact-hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .contact-form-section {
+        padding: 6rem 1.5rem;
+    }
+    .contact-content-wrapper {
+        flex-direction: column; /* Stack on smaller screens */
+        align-items: center; /* Center stacked items */
+        gap: 2.5rem;
+    }
+    .contact-info-card,
+    .contact-form {
+        min-width: unset;
+        width: 100%;
+        max-width: 600px;
+    }
+    .contact-info-card {
+        padding: 2rem;
+    }
+    .contact-info-card h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .info-item {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    .info-item i {
+        font-size: 1.6rem;
+    }
+    .contact-info-card .social-links {
+        margin-top: 1.5rem;
+    }
+    .contact-info-card .social-links a {
+        font-size: 2.2rem;
+    }
+    .contact-form {
+        padding: 2.5rem;
+    }
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    .form-group label {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 0.9rem 1.1rem;
+        font-size: 0.95rem;
+    }
+    .form-group textarea {
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-hero-section {
+        padding: 6rem 1.5rem;
+        min-height: 35vh;
+    }
+    .contact-hero-title {
+        font-size: 3.2rem;
+    }
+    .contact-hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .contact-form-section {
+        padding: 5rem 1.5rem;
+    }
+    .contact-content-wrapper {
+        gap: 2rem;
+    }
+    .contact-info-card {
+        padding: 1.8rem;
+    }
+    .contact-info-card h3 {
+        font-size: 1.6rem;
+    }
+    .info-item {
+        font-size: 0.95rem;
+    }
+    .info-item i {
+        font-size: 1.4rem;
+    }
+    .contact-info-card .social-links a {
+        font-size: 2rem;
+    }
+    .contact-form {
+        padding: 2rem;
+    }
+    .form-group {
+        margin-bottom: 1.2rem;
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-hero-section {
+        padding: 4rem 1rem;
+        min-height: 30vh;
+    }
+    .contact-hero-title {
+        font-size: 2.5rem;
+    }
+    .contact-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .contact-form-section {
+        padding: 4rem 1rem;
+    }
+    .contact-content-wrapper {
+        gap: 1.5rem;
+    }
+    .contact-info-card {
+        padding: 1.5rem;
+    }
+    .contact-info-card h3 {
+        font-size: 1.4rem;
+    }
+    .info-item {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    .info-item i {
+        font-size: 1.2rem;
+    }
+    .contact-info-card .social-links a {
+        font-size: 1.8rem;
+    }
+    .contact-form {
+        padding: 1.5rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 0.7rem 0.9rem;
+        font-size: 0.9rem;
+    }
+    .form-group textarea {
+        min-height: 80px;
+    }
+}
